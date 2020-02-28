@@ -3,9 +3,11 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-protected $debug = 0, $host = EMAIL_HOST, $username = EMAIL_USERNAME, $password = EMAIL_PASSWORD, $port = 465, $domain = DOMAIN;
-
 Class Mail {
+
+	protected $debug = 0, $host = EMAIL_HOST, $username = EMAIL_USERNAME, $password = EMAIL_PASSWORD, $port = 465, $domain = DOMAIN;
+
+
 	public function viewAction($email_template) {
 		View::render('mail_templates' . DS . $email_template);
 	}
@@ -67,7 +69,7 @@ Class Mail {
 		    // Content
 		    $mail->isHTML(true);                                  // Set email format to HTML
 		    $mail->Subject = $subject;
-		    $mail->Body    = $body
+		    $mail->Body    = $body;
 		    $mail->AltBody = 'This is the registration confirmation email for ' . APP_NAME;
 
 		    $mail->send();
@@ -133,7 +135,7 @@ Class Mail {
 		    // Content
 		    $mail->isHTML(true);                                  // Set email format to HTML
 		    $mail->Subject = $subject;
-		    $mail->Body    = $body
+		    $mail->Body    = $body;
 		    $mail->AltBody = 'This is the Support confirmation email for ' . APP_NAME;
 
 		    $mail->send();
@@ -199,7 +201,7 @@ Class Mail {
 		    // Content
 		    $mail->isHTML(true);                                  // Set email format to HTML
 		    $mail->Subject = $subject;
-		    $mail->Body    = $body
+		    $mail->Body    = $body;
 		    $mail->AltBody = 'This is the admin confirmation email for ' . APP_NAME;
 
 		    $mail->send();

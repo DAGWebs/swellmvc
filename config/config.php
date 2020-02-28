@@ -6,6 +6,12 @@
 	//Application Name
 	define('APP_NAME', 'SimpleCad');
 
+	//your support email
+	define('SUPPORT_EMAIL', 'support@daghq.com');
+
+	//website URL
+	define('WEBSITE', 'http://localhost');
+
 	//Application Default Controller
 	define('DEFAULT_CONTROLLER', 'login');
 
