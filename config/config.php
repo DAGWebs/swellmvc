@@ -4,10 +4,10 @@
 	====================================================*/
 	
 	//Application Name
-	define('APP_NAME', 'Fallout Solutions');
+	define('APP_NAME', 'SimpleCad');
 
 	//Application Default Controller
-	define('DEFAULT_CONTROLLER', 'Home');
+	define('DEFAULT_CONTROLLER', 'login');
 
 	//Application Default Executed Action 
 	//please dont change this if you dont know what its for
@@ -57,6 +57,32 @@
 	];
 	
 	/*=====  End of LINkS  ======*/
+
+	/*========================================
+	=            Your email creds            =
+	========================================*/
+
+	/**
+	 *
+	 * YOU CAN CREATE YOUR OWN EMAIL FUNCTION BY 
+	 * COPY AND PASTE ONE OF MY FUNCTIONS AND 
+	 * CHANGING THE FUNCTION NAME IE. FUNCTION REGISTER()
+	 * YOU CHANGER REGISTER TO SOMETHING ELSE
+	 * CHANGE REGISTER@ TO FUNCTIONNAME@
+	 * iT SHOULD LOOK LIKE 
+	 * $mail->setFrom('FUNCTIONNAME@' . $this->domain, 'FUNCTIONNAME | ' . APP_NAME);
+	 *
+	 */
+	
+	
+	define('DOMAIN', 'daghq.com'); //please use your domain name with out http or https IE daghq.net
+	define('EMAIL_HOST', 'mail.daghq.com'); //your email host IE mail.yourdomain.com
+	define('EMAIL_USERNAME', 'support@daghq.com'); // your email username IE email@yourdomain.com
+	define('EMAIL_PASSWORD', 'Cartarman1'); //email password IE SecretPassword 
+	define('EMAIL_PORT', 465); //Email SMTP Port usualy 465 or 25
+	
+	/*=====  End of Your email creds  ======*/
+	
 	
 	
 	

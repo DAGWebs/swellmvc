@@ -1,4 +1,6 @@
 <?php 
+session_start();
+ob_start();
 
 require_once "config/config.php";
 
@@ -23,7 +25,9 @@ $url = explode('/', $url);
 
 if(!empty($url)) {
 	$controller_name = $url[0];
-} else {
+} 
+
+if($url[0] == "") {
 	$controller_name = DEFAULT_CONTROLLER;
 }
 
